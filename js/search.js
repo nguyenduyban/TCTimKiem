@@ -8,8 +8,7 @@ function searchProducts() {
         alert('Tìm kiếm với từ khóa trống. Vui lòng nhập từ khóa để tìm kiếm sản phẩm.');
         return; 
     }
-
-    // Kiểm tra nếu từ khóa chứa ký tự đặc biệt như '@' hoặc '$'
+ // if (/[!@#$%^&*(),.?":{}|<>]/.test(keyword))
     if (/[!@#$%^&*(),.?":{}|<>]/.test(keyword)) {
         alert('Tìm kiếm với từ khóa chứa ký tự đặc biệt. Vui lòng nhập từ khóa hợp lệ.');
         return; 
